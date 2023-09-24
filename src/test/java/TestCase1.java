@@ -2,7 +2,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestCase {
+class TestCase1 {
     @Test
     public void test1() {
         assertThrows(IllegalArgumentException.class, () -> {
@@ -47,7 +47,7 @@ class TestCase {
 
     @Test
     public void test7() {
-        assertEquals("13-09-1800", RussiaCalendarCalculator.calculateNthDay(1800, 256));
+        assertEquals("13-09-1803", RussiaCalendarCalculator.calculateNthDay(1803, 256));
     }
 
     @Test
@@ -78,12 +78,12 @@ class TestCase {
 
     @Test
     public void test12() {
-        assertEquals("29-02-1804", RussiaCalendarCalculator.calculateNthDay(1804, 60));
+        assertEquals("12-09-1800", RussiaCalendarCalculator.calculateNthDay(1800, 256));
     }
 
     @Test
     public void test13() {
-        assertEquals("26-12-1900", RussiaCalendarCalculator.calculateNthDay(1900, 360));
+        assertEquals("25-12-1900", RussiaCalendarCalculator.calculateNthDay(1900, 360));
     }
 
     @Test
