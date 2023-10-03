@@ -32,23 +32,21 @@ public class RussiaCalendarCalculator {
         return sdf.format(date);
     }
 
-    private static int getDaysInYear(int year) {
+    public static int getDaysInYear(int year) {
         boolean isLeapYear = isLeapYear(year);
-        int daysInYear;
 
         if (year == 1918) {
-            daysInYear = 352;
+            return 352;
         } else {
             if (isLeapYear) {
-                daysInYear = 366;
+                return 366;
             } else {
-                daysInYear = 365;
+                return 365;
             }
         }
-        return daysInYear;
     }
 
-    private static boolean isLeapYear(int year) {
+    public static boolean isLeapYear(int year) {
         if (year == 1918) {
             return false;
         } else if (year < 1918) {
